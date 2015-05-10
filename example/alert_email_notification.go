@@ -2,7 +2,7 @@ package task
 
 import (
 	"github.com/Sirupsen/logrus"
-	"strixhq.com/gluttony/task"
+	"github.com/ethervoid/gluttony/task"
 )
 
 type alertEmailNotification struct {
