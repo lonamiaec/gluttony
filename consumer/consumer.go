@@ -53,6 +53,7 @@ func (consumer *Consumer) Close() {
 }
 
 func (consumer *Consumer) executeTask(message []byte) {
+	_ = "breakpoint"
 	taskData, err := consumer.composeTaskData(message)
 	if err != nil {
 		logrus.Errorf("Can't compose task data: %s", err)

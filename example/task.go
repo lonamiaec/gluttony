@@ -1,4 +1,4 @@
-package task
+package example
 
 import (
 	"github.com/Sirupsen/logrus"

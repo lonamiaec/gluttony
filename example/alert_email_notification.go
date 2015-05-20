@@ -1,4 +1,4 @@
-package task
+package example
 
 import (
 	"github.com/Sirupsen/logrus"
@@ -19,6 +19,7 @@ func NewAlertEmailNotification(taskData *task.TaskData) *alertEmailNotification 
 
 func (alertTask *alertEmailNotification) Execute() error {
 	//Logic to send the email notification
+        return nil
 }
 
 func (alertTask *alertEmailNotification) GetTaskData() *task.TaskData {

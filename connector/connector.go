@@ -25,6 +25,8 @@ func New(connData *ConnectorData) (Connector, error) {
 	switch connData.Type {
 	case "amqp":
 		return NewRabbitMQConnector(connData), nil
+	case "sqs":
+		return NewSQSConnector(connData), nil
 	default:
 		return nil, fmt.Errorf("Uknown connector type")
 	}
